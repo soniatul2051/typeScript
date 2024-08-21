@@ -1,7 +1,7 @@
 # typeScript
 TypeScript is a superset of JavaScript that adds static typing to the language. It allows developers to catch errors early during development by specifying types for variables, function parameters, return values, and more. TypeScript also includes features like interfaces, enums, and advanced type capabilities that make it easier to build and maintain large-scale applications.
-Key Features of TypeScript:
-Static Typing:
+# 🤷‍♂️Key Features of TypeScript:
+🤷‍♂️Static Typing:
 TypeScript introduces static types to JavaScript, meaning you can declare types for variables, function parameters, and return values.
 
 typescript
@@ -9,7 +9,8 @@ Copy code
 let age: number = 30;
 let name: string = "John";
 let isAdmin: boolean = true;
-Interfaces:
+
+🤷‍♂️Interfaces:
 Interfaces define the structure of an object, making it easier to enforce the shape of data.
 
 typescript
@@ -24,7 +25,9 @@ const user: User = {
   name: "Alice",
   age: 28,
 };
-Enums:
+
+
+🤷‍♂️Enums:
 Enums allow you to define a set of named constants, making your code more readable and maintainable.
 
 typescript
@@ -36,13 +39,15 @@ enum Color {
 }
 
 let favoriteColor: Color = Color.Green;
-Type Inference:
+
+🤷‍♂️Type Inference:
 TypeScript can automatically infer the type of a variable based on its value.
 
 typescript
 Copy code
 let count = 42;  // inferred as number
-Generics:
+
+🤷‍♂️Generics:
 Generics provide a way to create reusable components that work with a variety of types.
 
 typescript
@@ -52,7 +57,8 @@ function identity<T>(arg: T): T {
 }
 
 let output = identity<string>("Hello TypeScript");
-Type Aliases:
+
+🤷‍♂️Type Aliases:
 Type aliases allow you to create new names for existing types.
 
 typescript
@@ -61,7 +67,8 @@ type ID = string | number;
 
 let userId: ID = 123;
 let orderId: ID = "abc123";
-Union and Intersection Types:
+
+🤷‍♂️Union and Intersection Types:
 Union types allow a variable to be one of several types, while intersection types combine multiple types into one.
 
 typescript
@@ -87,7 +94,8 @@ let employee: ElevatedEmployee = {
 let id: string | number;  // Union type
 id = "123";
 id = 123;
-Modules:
+
+🤷‍♂️Modules:
 TypeScript uses ES6-style modules to organize and share code across files.
 
 typescript
@@ -101,7 +109,8 @@ export function add(x: number, y: number): number {
 import { add } from './mathUtils';
 
 console.log(add(2, 3));  // Output: 5
-Classes:
+
+🤷‍♂️Classes:
 TypeScript supports object-oriented programming with classes, inheritance, and access modifiers like public, private, and protected.
 
 typescript
@@ -123,14 +132,16 @@ class Dog extends Animal {
 const dog = new Dog("Rex");
 dog.bark();  // Output: Woof! Woof!
 dog.move(10);  // Output: Rex moved 10 meters.
-Setting Up a TypeScript Project:
-Installation:
+
+# Setting Up a TypeScript Project:
+🤷‍♂️Installation:
 Install TypeScript globally using npm:
 
 bash
 Copy code
 npm install -g typescript
-Creating a TypeScript File:
+
+🤷‍♂️Creating a TypeScript File:
 Create a .ts file and start writing TypeScript code.
 
 typescript
@@ -141,7 +152,8 @@ const greet = (name: string): string => {
 };
 
 console.log(greet("World"));
-Compiling TypeScript to JavaScript:
+
+🤷‍♂️Compiling TypeScript to JavaScript:
 Compile the TypeScript file into JavaScript using the TypeScript compiler (tsc):
 
 bash
@@ -149,7 +161,7 @@ Copy code
 tsc hello.ts
 This generates a hello.js file that you can run with Node.js or in a browser.
 
-TypeScript Configuration:
+🤷‍♂️TypeScript Configuration:
 TypeScript projects typically include a tsconfig.json file to specify compiler options.
 
 json
@@ -164,15 +176,17 @@ Copy code
     "forceConsistentCasingInFileNames": true
   }
 }
-Advanced TypeScript Features:
-Mapped Types: Create new types by transforming existing ones.
+
+# Advanced TypeScript Features:
+🤷‍♂️Mapped Types: Create new types by transforming existing ones.
 
 typescript
 Copy code
 type Readonly<T> = {
   readonly [P in keyof T]: T[P];
 };
-Conditional Types: Perform type checks and create different types based on conditions.
+
+🤷‍♂️Conditional Types: Perform type checks and create different types based on conditions.
 
 typescript
 Copy code
